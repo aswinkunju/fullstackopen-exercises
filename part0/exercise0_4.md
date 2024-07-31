@@ -27,7 +27,7 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: [{ "content": "HTML is easy", "date": "2024-7-31S" }, ... ]
+    server-->>browser: [{content: "", date: "2024-07-31T16:07:33.267Z"}, {content: "", date: "2024-07-31T16:09:13.429Z"},…]
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
