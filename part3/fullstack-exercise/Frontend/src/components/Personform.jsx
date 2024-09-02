@@ -1,0 +1,18 @@
+const Personform = ({ onSubmit, name, nameChange, number, numberChange,showError }) => {
+    return (
+        <form onSubmit={onSubmit}>
+            <div>
+                name: <input value={name} onChange={nameChange} />
+            </div>
+            
+            <div>
+                number: <input value={number} onChange={numberChange} />
+            </div>
+            <div>{<p>{showError}</p>}</div>
+            <div>
+                <button type="submit">add</button>
+            </div>    
+        </form>
+    )
+}
+export default Personform;
